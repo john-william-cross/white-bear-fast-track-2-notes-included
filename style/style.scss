@@ -1,0 +1,33 @@
+.background-image {
+   /* https://css-tricks.com/perfect-full-page-background-image/ */
+   background: url("../images/background-landing.jpg") no-repeat center center
+      fixed;
+   background-size: cover;
+   min-height: 100vh;
+}
+
+.btn-link {
+   font-weight: $font-weight-bold; // grabbed this from variables.scss
+   padding: 0;
+}
+
+//btn is nested inside button group
+.btn-group .btn {
+   font-weight: $font-weight-normal;
+}
+
+.card-body {
+   color: $white;
+   font-family: $font-family-serif;
+}
+
+// no space between classes below because they are not nested
+.card-body.bg-secondary {
+   border-top-left-radius: $border-radius;
+   border-top-right-radius: $border-radius;
+}
+
+.card-body.bg-primary {
+   border-bottom-left-radius: $border-radius;
+   border-bottom-right-radius: $border-radius;
+}
